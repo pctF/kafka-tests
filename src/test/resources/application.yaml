@@ -8,6 +8,8 @@ spring:
 logging:
   level:
     com.github.pctf: debug
+    org.apache: OFF
+    kafka: OFF
 kafka:
   queue:
     string:

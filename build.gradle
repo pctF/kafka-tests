@@ -16,12 +16,18 @@ repositories {
     mavenCentral()
 }
 
+
 dependencies {
+    // BOM
     implementation platform("org.springframework.boot:spring-boot-dependencies:${springBootVersion}")
+
+    // Spring
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.kafka:spring-kafka'
 
+    // TEST
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
+    testImplementation 'org.springframework.kafka:spring-kafka-test'
 }

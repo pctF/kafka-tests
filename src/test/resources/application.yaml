@@ -1,0 +1,14 @@
+spring:
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+      group-id: "pctf-unit-test"
+    listener:
+      missing-topics-fatal: false
+logging:
+  level:
+    com.github.pctf: debug
+kafka:
+  queue:
+    string:
+      topic: "test-string-topic"

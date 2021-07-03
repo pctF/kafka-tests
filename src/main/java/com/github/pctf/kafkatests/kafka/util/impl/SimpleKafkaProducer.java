@@ -7,9 +7,9 @@ import org.springframework.kafka.core.KafkaTemplate;
 
 class SimpleKafkaProducer<T> implements KafkaProducer<T> {
     protected final Logger log = LoggerFactory.getLogger(getClass());
-    protected final KafkaTemplate<String, T> kafkaTemplate;
+    protected final KafkaTemplate<Integer, T> kafkaTemplate;
 
-    public SimpleKafkaProducer(KafkaTemplate<String, T> kafkaTemplate) {
+    public SimpleKafkaProducer(KafkaTemplate<Integer, T> kafkaTemplate) {
         this.kafkaTemplate = kafkaTemplate;
     }
 

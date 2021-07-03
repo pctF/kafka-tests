@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 class StringKafkaProducer extends SimpleKafkaProducer<String> {
-    public StringKafkaProducer(KafkaTemplate<String, String> kafkaTemplate) {
+    public StringKafkaProducer(KafkaTemplate<Integer, String> kafkaTemplate) {
         super(kafkaTemplate);
     }
 }

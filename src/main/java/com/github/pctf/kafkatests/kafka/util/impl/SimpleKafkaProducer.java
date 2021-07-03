@@ -5,7 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 
-public class SimpleKafkaProducer<T> implements KafkaProducer<T> {
+class SimpleKafkaProducer<T> implements KafkaProducer<T> {
     protected final Logger log = LoggerFactory.getLogger(getClass());
     protected final KafkaTemplate<String, T> kafkaTemplate;
 
